@@ -1,0 +1,26 @@
+[
+  {
+    "AccountNumber": 10,
+    "CustomerID": 5,
+    "CustomerName": "Rahul",
+    "AccountBalance": 6000,
+    "DepositAmount": 0,
+    "WithdrawalAmount": 0
+  },
+  {
+    "AccountNumber": 4,
+    "CustomerID": 1,
+    "CustomerName": "Mohan",
+    "AccountBalance": 57800,
+    "DepositAmount": 0,
+    "WithdrawalAmount": 0
+  },
+  {
+    "AccountNumber": 3,
+    "CustomerID": 1,
+    "CustomerName": "Mukesh Kumar",
+    "AccountBalance": 0,
+    "DepositAmount": 0,
+    "WithdrawalAmount": 0
+  }
+]

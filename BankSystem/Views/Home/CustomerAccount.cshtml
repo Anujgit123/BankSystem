@@ -1,0 +1,50 @@
+﻿@model IEnumerable<BankSystem.Models.UserAccountModel>
+
+@{
+    ViewData["Title"] = "CustomerAccount";
+}
+
+<h1>CustomerAccount</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AccountNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AccountBalance)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.AccountNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AccountBalance)
+            </td>
+            <td>
+                
+                @Html.ActionLink("Delete", "DeleteCustomerAccountView", new {  AccountNumber = item.AccountNumber,  AccountBalance = item.AccountBalance, CustomerName = item.CustomerName, CustomerID = item.CustomerID} , FormMethod.Post)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
